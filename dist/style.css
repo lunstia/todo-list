@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 
+    box-sizing: border-box;
+
     font-family:'Courier New', Courier, monospace;
     font-size: 1.125rem;
 }
@@ -9,7 +11,7 @@
 :root {
     --header-footer-color: #FF6666;
     --main-content-color: #FFEADD;
-    --nav-color: #FCAEAE;
+    --nav-color: #FF8989;
 
     --light-text-color: #FFF;
     --dark-text-color: #000;
@@ -35,6 +37,8 @@ h1 {
 
 main {
     display: flex;
+
+    min-height: calc(100svh - 50px - 23px);
 }
 
 nav {
@@ -47,6 +51,7 @@ nav {
     gap: 20px;
 
     padding: 20px;
+    flex: 1 1 0;
 }
 
 .list-container {
@@ -59,4 +64,6 @@ nav {
 #content {
     background-color: var(--main-content-color);
     color: var(--dark-text-color);
+
+    flex: 5 1 0;
 }
