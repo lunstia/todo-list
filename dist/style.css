@@ -41,6 +41,19 @@ main {
     min-height: calc(100svh - 50px - 23px);
 }
 
+#content {
+    padding: 50px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: left;
+}
+
+#title {
+    width: 100%;
+}
+
 nav {
     background-color: var(--nav-color);
     color: var(--light-text-color);
