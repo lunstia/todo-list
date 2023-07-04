@@ -4,6 +4,4 @@ export default class todo {
         this.Priority = priority,
         this.date = date
     }
-
-    
 }

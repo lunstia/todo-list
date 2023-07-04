@@ -20,21 +20,29 @@
                 <button>This Week</button>
             </div>
 
-            <div class="list-container">
+            <div class="list-container" id="project-list">
                 <h2>Projects</h2>
+                <button id="create-project">New Project</button>
             </div>
             
         </nav>
         <section id="content">
             <h2 id="title">Today</h2>
             <div id="todo-list">
-
+                
             </div>
         </section>
     </main>
     <footer>
         <p>lunstia &copy; 2023</p>    
     </footer>
+    <dialog id="project-dialog">
+        <form>
+            <legend>Create New Project</legend>
+            <input type="text"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </dialog>
     
 </body>
 </html>
