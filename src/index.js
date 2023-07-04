@@ -1,5 +1,5 @@
-import Project from './project.js'
-import Todo from './todo.js'
+import Project from './modules/project.js'
+import Todo from './modules/todo.js'
 
 const PROJECT_LIST = document.querySelector("#project-list");
 const CREATE_PROJECT = document.querySelector("#create-project");
