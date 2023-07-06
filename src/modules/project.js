@@ -5,15 +5,15 @@ export default class project {
         this.name = name;
         this.todos = [];
 
-        projects.push(this);
+        project.projects.push(this);
     }
 
 
     static getProjects() {
-        return projects;
+        return this.projects;
     }
 
-    get todos() {
+    getTodos() {
         return this.todos;
     }
 

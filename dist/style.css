@@ -89,3 +89,12 @@ dialog {
 
     flex: 5 1 0;
 }
+
+#todo-list {
+    width: 100%;
+}
+
+#todo-list > div {
+    display: flex;
+    gap: 50px;
+}
