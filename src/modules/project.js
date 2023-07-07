@@ -1,23 +1,22 @@
 export default class project {
-    static projects = [];
+  static projects = [];
 
-    constructor(name, todos) {
-        this.name = name;
-        this.todos = todos ? todos : [];
+  constructor(name, todos) {
+    this.name = name;
+    this.todos = todos || [];
 
-        project.projects.push(this);
-    }
+    project.projects.push(this);
+  }
 
+  static getProjects() {
+    return this.projects;
+  }
 
-    static getProjects() {
-        return this.projects;
-    }
+  getTodos() {
+    return this.todos;
+  }
 
-    getTodos() {
-        return this.todos;
-    }
-
-    insertTodo(todo) {
-        this.todos.push(todo);
-    }
-};
+  insertTodo(todo) {
+    this.todos.push(todo);
+  }
+}
