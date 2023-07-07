@@ -1,9 +1,9 @@
 export default class project {
     static projects = [];
 
-    constructor(name) {
+    constructor(name, todos) {
         this.name = name;
-        this.todos = [];
+        this.todos = todos ? todos : [];
 
         project.projects.push(this);
     }
